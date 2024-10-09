@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Project Setup
 
-## Getting Started
+Welcome to the **Next.js Project Setup repository**! 🎉 This repository is designed to make your Next.js journey as smooth as possible! Whether you're working on a small personal project or diving into a large enterprise application, you’ll find everything you need to hit the ground running. With a well-structured setup and best practices in place, you can focus more on creating and less on configuration.
 
-First, run the development server:
+We believe in the power of community, so feel free to contribute your ideas and improvements! Your insights can help others on their Next.js adventures, too.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+So, grab your favorite snack, dive in, and let's build something amazing together! Happy coding! 🚀
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js: 14
+- React: 18
+- Node.js: 20
+- Typescript
+- Tailwind CSS
+- Package Manager: pnpm (recommended)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🤸 Quick Start Guide
 
-## Learn More
+Follow these steps to get your development environment up and running:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```
+   git clone https://github.com/FeryArdsh/nextjs-project-setup.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Install dependencies**
 
-## Deploy on Vercel
+   ```
+   pnpm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Build the project**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```
+   pnpm build
+   ```
+
+4. **Start the development server**
+
+   ```
+   pnpm dev
+   ```
+
+   Your app should now be running on [http://localhost:3000](http://localhost:3000)
+
+## 🔧 Husky Setup
+
+To ensure code quality and consistent commits, we use Husky for Git hooks:
+
+1. Set up Husky
+
+   ```
+   pnpm prepare
+   ```
+
+2. Verify the setup
+   Run a git commit. If Husky is set up correctly, it will run the pre-commit and commit-msg hooks.
+
+3. We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard to maintain consistent and informative commit messages.
+
+## 🔍 Configuration Update
+
+To customize the project configuration:
+
+1. Search for `!CONFIG_UPDATE` in the project files
+2. Update the configurations according to your needs
+3. Commit your changes
+
+This step allows you to tailor the setup to your specific requirements.
+
+## 🐳 Docker Setup (optional)
+
+To run this project using Docker:
+
+1. **Build the Docker image**
+
+   ```
+   docker build -t your-image-name .
+   ```
+
+2. **Run the Docker container**
+
+   ```
+   docker run -p 3000:3000 your-image-name
+   ```
+
+   Your app will be available at [http://localhost:3000](http://localhost:3000)
+
+## 📚 Additional Resources
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://reactjs.org/docs)
+- [pnpm Documentation](https://pnpm.io/motivation)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Husky Documentation](https://typicode.github.io/husky/#/)
+- [ESLint Documentation](https://eslint.org/docs/user-guide/getting-started)
+- [Prettier Documentation](https://prettier.io/docs/en/index.html)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+⭐ If you find this project useful, please consider giving it a star on GitHub! ⭐
+
+Keywords: Next.js, React, Node.js, Web Development, JavaScript, TypeScript, Frontend Framework, SSR, Static Site Generation, pnpm
